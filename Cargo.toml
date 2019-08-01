@@ -32,6 +32,7 @@ v2_16 = ["v2_14", "webkit2gtk-sys/v2_16"]
 v2_18 = ["v2_16", "webkit2gtk-sys/v2_18"]
 v2_20 = ["v2_18", "webkit2gtk-sys/v2_20"]
 v2_22 = ["v2_20", "webkit2gtk-sys/v2_22"]
+v2_24 = ["v2_22", "webkit2gtk-sys/v2_24"]
 
 [dependencies]
 bitflags = "^1.0"
@@ -48,6 +49,7 @@ git = "https://github.com/gtk-rs/sys"
 
 [dependencies.gio]
 git = "https://github.com/gtk-rs/gio"
+rev = "144987ae909bdde81b3f7e3ae7f101f0bbd1ea2a"
 
 [dependencies.gio-sys]
 git = "https://github.com/gtk-rs/sys"
@@ -69,7 +71,8 @@ git = "https://github.com/gtk-rs/sys"
 
 # TODO: regenerate the crate (not working with latest gir).
 [dependencies.javascriptcore-rs]
-git = "https://github.com/gtk-rs/javascriptcore-rs"
+#git = "https://github.com/gtk-rs/javascriptcore-rs"
+path = "../javascriptcore-rs"
 
 [dependencies.webkit2gtk-sys]
 path = "./webkit2gtk-sys"

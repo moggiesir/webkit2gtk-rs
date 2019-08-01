@@ -29,7 +29,7 @@ git = "https://github.com/gtk-rs/sys"
 git = "https://github.com/gtk-rs/sys"
 
 [dependencies.javascriptcore-rs-sys]
-git = "https://github.com/gtk-rs/javascriptcore-rs"
+path = "../../javascriptcore-rs/javascriptcore-sys"
 
 [dependencies.pango-sys]
 git = "https://github.com/gtk-rs/sys"
@@ -50,6 +50,7 @@ v2_16 = ["v2_14"]
 v2_18 = ["v2_16"]
 v2_20 = ["v2_18"]
 v2_22 = ["v2_20"]
+v2_24 = ["v2_22"]
 v2_6 = []
 v2_8 = ["v2_6"]
 
